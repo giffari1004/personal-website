@@ -6,6 +6,7 @@ export type FormData = {
 
 export interface ContactFormProps {
   form: FormData;
+  errors: Partial<Record<keyof FormData, string>>; // Tambahkan tipe errors di props interface
   onChange: (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => void;

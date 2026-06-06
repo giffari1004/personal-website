@@ -3,7 +3,8 @@ import ContactForm from "./contact/ContactForm";
 import SuccessMessage from "./contact/SuccessMessage";
 
 export default function Contact() {
-  const { form, sent, handleChange, handleSubmit } = useContactForm();
+  // 1. Ambil 'errors' yang sekarang sudah dikembalikan oleh useContactForm
+  const { form, sent, errors, handleChange, handleSubmit } = useContactForm();
 
   return (
     <section id="contact" className="py-28 bg-base-200/20 relative">
@@ -45,8 +46,10 @@ export default function Contact() {
             {sent ? (
               <SuccessMessage />
             ) : (
+              /* 2. Kirim props 'errors' ke komponen ContactForm */
               <ContactForm
                 form={form}
+                errors={errors}
                 onChange={handleChange}
                 onSubmit={handleSubmit}
               />
