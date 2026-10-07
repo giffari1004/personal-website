@@ -2,11 +2,6 @@ export const projects = [
   {
     title: "Masjid Financial Management System",
     tech: ["React", "Node.js", "MongoDB", "AWS"],
-    stats: [
-      { label: "Team", value: "8" },
-      { label: "MongoDB", value: "4" },
-      { label: "AWS", value: "3" },
-    ],
     problem:
       "Pengurus masjid menghadapi kendala dalam transparansi keuangan dan keterlambatan laporan bulanan, sehingga menurunkan tingkat kepercayaan jamaah dalam menyalurkan infak.",
     tech_detail:
@@ -16,6 +11,28 @@ export const projects = [
     result:
       "Meningkatkan transparansi dan efisiensi pelaporan kas sebesar 100% (real-time), serta mempermudah jamaah dalam memantau alokasi dana masjid kapan saja tanpa hambatan teknis.",
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      "./images/Manbaul-Khoir.png",
+    caseStudyUrl: "#",
+  },
+  {
+    title: "FreshMart",
+    tech: [
+      "Next.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Supabase",
+      "TS",
+    ],
+    problem:
+      "banyak customer yang kesulitan dan tidak ada waktu untuk berbelanja kebutuhan pokok, FreshMart menyediakan layanan untuk berbelanja melalui web dan diantarkan berdasarkan store FreshMart terdekat.",
+    tech_detail:
+      "Membangun Online Grocery Web App berjudul FreshMart. Customer dapat memilih kebutuhan pokok yang diinginkan dan langsung diantarkan ke rumah sesuai barang yang dipesan. proses pengiriman tidak butuh waktu yang lama",
+    actions:
+      "Mengembangkan website menggunakan Next, Shadcn, TS, dan Axios pada frontend untuk antarmuka yang dinamis, dikombinasikan dengan Express.js dengan database relasional yaitu PostgreSQL beserta toolsnya yaitu Supabase, Vercel, Railway dan github untuk memudahkan proses komunikasi data secara dinamis antara frontend dan backend.",
+    result:
+      "Mempermudah cutomer dalam mengakses Web App dan efisiensi waktu dalam melakukan belanja kebutuhan pokok serta membantu admin untuk mempermudah pembuatan laporan keuangan dan menganalisis laporan keuangan masing-masing store FreshMart",
+    image: "./images/FreshMart.png",
+    caseStudyUrl: "https://freshmart-frontend-six.vercel.app/",
   },
 ];

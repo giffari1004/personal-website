@@ -71,7 +71,7 @@ export default function Hero() {
             <div className="relative w-64 h-72 sm:w-72 sm:h-80 lg:w-80 lg:h-96 overflow-hidden bg-base-300">
               {/* Placeholder photo */}
               <img
-                src="/images/FotoProfile.png"
+                src="/images/Profile.JPG"
                 alt="Gifar Dev"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />

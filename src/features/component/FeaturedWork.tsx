@@ -31,19 +31,6 @@ export default function FeaturedWork() {
                       {project.title}
                     </h3>
 
-                    {/* Stats row */}
-                    <div className="flex gap-6 mb-6">
-                      {project.stats.map((stat, j) => (
-                        <div key={j} className="text-center">
-                          <div className="text-lg font-black text-primary">
-                            {stat.value}
-                          </div>
-                          <div className="text-[10px] tracking-widest text-base-content/40 uppercase">
-                            {stat.label}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
                   </div>
 
                   <div className="space-y-4 text-sm">
@@ -65,7 +52,9 @@ export default function FeaturedWork() {
                   </div>
 
                   <a
-                    href="#"
+                    href={project.caseStudyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-xs tracking-widest uppercase text-primary/70 hover:text-primary transition-colors font-bold group/link"
                   >
                     View Case Study
